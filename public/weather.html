@@ -51,8 +51,8 @@ $("#button").click(function(e){
 
   });
  var myUrl= "http://api.openweathermap.org/data/2.5/weather?q=";
- var myUrl2 = "Utah&appid=35c53a03da5284642816c540a02e134e";
-  myUrl += myUrl2;
+ var myUrl2 = ",Utah&appid=35c53a03da5284642816c540a02e134e";
+  myUrl += value +myUrl2;
   console.log(myUrl);
   $.ajax({
     url : myUrl,
